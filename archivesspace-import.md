@@ -42,7 +42,7 @@ To import Data in ArchivesSpace run the program on the Terminal and open the sta
 
 Select 'Data Import' and then the kind of file you want to import: you can choose between EAD2002 (the only one format that allows to import 'Resources', the AS level for a Collection), EAC, CSV and Xml with the UniMarc Standards. To import finding aids and archival paper collections choose the EAD. 
 
-![Background Jobs Image](https://github.com/marcolock/archivesspace-importguide/blob/master/images/3%20BackgroundJobs%20menu.png) & ![Import type Image](https://github.com/marcolock/archivesspace-importguide/blob/master/images/4%20Import%20Type.png)
+![Background Jobs Image](https://github.com/marcolock/archivesspace-importguide/blob/master/images/4%20Import%20Type.png)
 
 The Import/Export Mapping for the EAD2002 is the guide tool to understand how EAD elements are formatted to be imported in AS and which are the corresponding objects and properties on AS data fields. 
 
