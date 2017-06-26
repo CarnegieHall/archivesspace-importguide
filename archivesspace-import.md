@@ -4,16 +4,16 @@
 
 ## Start ArchivesSpace
 
-To start the Demo version of AS we need to execute manually the directory of the program. To run the program just execute on the terminal one of these scripts. This will start ArchivesSpace in foreground model, so you need to keep open the Terminal window (and if you close it the program shut down). You need to have Java 1.6 (or newer). 
+To start the Demo version of AS we need to execute manually the program directory. To run it just execute on the computer terminal one of those scripts. ArchivesSpace will start in foreground model, so you must keep open the terminal window (if you close it the program shuts down). Java 1.6 (or newer) is required.
 
 * On Linux and OSX:
 
-     `cd /path/to/archivesspace     
+     `cd /path/to/archivesspace
      ./archivesspace.sh`
      
 * On Windows:
 
-     `cd \path\to\archivesspace     
+     `cd \path\to\archivesspace
      archivesspace.bat`
 
 You can also drag and drop the AS folder from the Applications to the Terminal, instead of write the path to the program, as it shown in the image below. The path will automatically appear.
@@ -22,14 +22,14 @@ You can also drag and drop the AS folder from the Applications to the Terminal, 
 
 It will take a while to run completely the program, and once it’s ready you can access the system by one of these URL links in your internet browser:
 
-* http://localhost:8089/ -- the backend  
-* http://localhost:8080/ -- the staff interface  
-* http://localhost:8081/ -- the public interface  
-* http://localhost:8082/ -- the OAI-PMH server  
+* http://localhost:8089/ -- the backend
+* http://localhost:8080/ -- the staff interface
+* http://localhost:8081/ -- the public interface
+* http://localhost:8082/ -- the OAI-PMH server
 * http://localhost:8090/ -- the Solr admin console
 
 
-A detailed description is on the GitHub web-page of AS, linked here below. 
+A detailed description is on the GitHub page of ArchivesSpace, linked here below. 
 
   https://github.com/archivesspace/archivesspace/README.md
   
@@ -40,7 +40,7 @@ To import Data in ArchivesSpace run the program on the Terminal and open the sta
 
 ![Create button image](https://github.com/marcolock/archivesspace-importguide/blob/master/images/2%20Create%20button.png)
 
-Select 'Data Import' and then the kind of file you want to import: you can choose between EAD2002 (the only one format that allows to import 'Resources', the AS level for a Collection), EAC, CSV and Xml with the UniMarc Standards. To import finding aids and archival paper collections choose the EAD. 
+Select `Data Import` and then the kind of file you want to import: you can choose between EAD2002 (the only one format that allows to import `Resources`, the AS level for a Collection), EAC, CSV and Xml with the UniMarc Standards. To import finding aids and archival paper collections choose the EAD. 
 
 ![Background Jobs Image](https://github.com/marcolock/archivesspace-importguide/blob/master/images/4%20Import%20Type.png)
 
@@ -61,7 +61,7 @@ To convert our Excel Spreadsheet in an Xml EAD (Encoding Archival Description) f
 
 The template is an Excel Spreadsheet with denominated and fixed header for each columns. Populate the columns with the data from your spreadsheet, being attentive to choose the right element to ingest the record fields of your collection and normalize them. The first row below the columns’ header indicates the EAD elements, to better understand where records are going and how they convert. Copy and paste the columns of your spreadsheet and autofill the new spreadsheet, but do not use formatting character (as tabs, returns and bullets) or symbols and accented letters (as &, <, and > cause they can interfere with the encoding).
 
-*[Template headers Image]*
+![Template headers Image](https://github.com/marcolock/archivesspace-importguide/blob/master/images/5%20Template%20Headers.PNG)
 
 The values inserted will be shown in the public interface of AS, exception for the Creator and the Agents that need to be published manually from the staff interface.
 
@@ -77,7 +77,7 @@ Mandatory fields to fill and to not leave blank are:
 
 The entire EAD record is provided, for each row, by a single formula in the column EAD encoding. The `CONCATENATE` function is written to merge the fields we have populated and to translate them in the markup language Xml. To change or upload the function and to insert more fields, you need to re-write the function’s fragile syntax. Be careful, once you open the cell do not click on other cells because it could change the function, but use Enter to get out.
 
-*[Concatenate Image]*
+![Concatenate Image](https://github.com/marcolock/archivesspace-importguide/blob/master/images/6%20Concatenate%20function.png)
 
 Now you can copy the EAD encoding cells for each record you want to import and paste them into another application. Do the copy/paste of the EAD encoding only on a Windows environment with Microsoft Office 13 – Excel [Import on a Mac machine could causes import errors].
 
@@ -94,34 +94,29 @@ Now you have to create the EAD using the preform example here below, written by 
     xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">;
 
     <eadheader>
-        <eadid> **CHA-CollectionName_EAD** </eadid>
+        <eadid> CHA-CollectionName_EAD </eadid>
         <filedesc>
             <titlestmt>
-                <titleproper> **CollectionName finding aids, by YourName** </titleproper>
+                <titleproper> CollectionName finding aids, by YourName </titleproper>
             </titlestmt>
         </filedesc>
     </eadheader>
-
     <archdesc level="collection">
-
         <did>
-            <unitid> **CHA-CollectionName** </unitid>
+            <unitid> CHA-CollectionName </unitid>
             <langmaterial>
-            <language> **English** </language>, <language> **Other language** </language>
+            <language> English </language>, <language> **Other language** </language>
             </langmaterial>
-            <origination><persname> **Creator of the collection** </persname></origination>
-            <unittitle> **Title of the Collection** </unittitle>
-            <unitdate normal="**1900**/**2000**"> **1900-2000** </unitdate>
-            <physdesc><extent> **Number / Container** </extent></physdesc>
-
+            <origination><persname> Creator of the collection </persname></origination>
+            <unittitle> Title of the Collection </unittitle>
+            <unitdate normal="1900/2000">1900-2000 </unitdate>
+            <physdesc><extent> Number / Container </extent></physdesc>
         </did>
-
         <dsc>
 
 	[Paste here the records from the spreadsheet]
 
         </dsc>
-
     </archdesc>
 </ead>`
 
@@ -139,11 +134,11 @@ materials being described.
 
 To insert the records from the Import Spreadsheet Template, just paste the EAD encoding fields inside the provided EAD form on “[Paste here your records from the spreadsheet]” in the second part of the document, inside the <dsc></dsc> element. 
 
-*[Copy and Paste Image]*
+![Copy and Paste Image](https://github.com/marcolock/archivesspace-importguide/blob/master/images/7%20Copy%20and%20Paste%20elements.png)
 
 This spreadsheet does not generate the hierarchical relationships in EAD. It is expected that users will insert components as needed into the EAD. To structure your data and put item level records inside a series level record you have to paste the item records inside the <c></c> element of the series: the right position is the <did> element just before the closing wrap </did>. 
 
-*[Insert elements Image]*
+![Insert elements Image](https://github.com/marcolock/archivesspace-importguide/blob/master/images/8%20Insert%20elements%20in%20series.png)
 
 You have to insert in the EAD some basic information about the collection. Collection name, language, creator, dates and extension must be write in the designated wrapper, but you can just cut and re-write the bolded words in the EAD form. 
 
@@ -179,11 +174,11 @@ To add more information about the collection you can encode it in the EAD or use
 
 Once the EAD is ready you can go on ArchivesSpace in the Background Jobs section, and upload the file. To start the import process click on the button “Queue work” and your import will start as soon the program have finish to run the previous job. The black window in the “Log” field executes the import procedures and it will show the final message with the results of the import.
 
-*[Img 9]*
+![Img 9](https://github.com/marcolock/archivesspace-importguide/blob/master/images/9%20Import%20page.png)
 
 If the import went fine you will be able to refresh the page and you’ll find the new collection browsing in the Resources (for the staff interface) or the Collections (for the public interface). If some errors occurred, the window will say what’s the problem interrupted the process and where to find it. The mistake in the writing of the EAD could be in both of the preparatory moments (the copy/paste of the records from the collection spreadsheet to the Import Spreadsheet, and the writing of the EAD). 
 
-*[Img 10]*
+![Img 10](https://github.com/marcolock/archivesspace-importguide/blob/master/images/10%20Import%20error.png)
 
 You can check the spreadsheet and be sure every mandatory field is filled and there aren’t not acceptable characters. Then you may have to check the syntax of the EAD. Here some useful tips: 
 
