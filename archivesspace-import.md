@@ -82,10 +82,10 @@ Now you can copy the EAD encoding cells for each record you want to import and p
 
 ### Create and edit the EAD
 
-To create the EAD Xml use the pre-form example here, originally written by Kate Bowers and posted on the [Harvard University Blog](https://blogs.harvard.edu/archivaldescription/2017/01/26/spreadsheet_to_ead_to_as/), and then modified by Marco Lo Cascio for Carnegie Hall Archives. The Xml is a markup language based on standard elements and attributes, able to describe a finding aid in a machine readable structure. To open, edit and modify an EAD Xml you can use a simple text editor (.txt) as the Notepad on Windows or specific encoding program as AtoM or Oxygen.
+To create the EAD Xml use the pre-form example here called [`EADtoAS.txt`](https://github.com/marcolock/archivesspace-importguide/blob/master/EAD%20to%20AS.txt), originally written by Kate Bowers and posted on the [Harvard University Blog](https://blogs.harvard.edu/archivaldescription/2017/01/26/spreadsheet_to_ead_to_as/), and then modified by Marco Lo Cascio for Carnegie Hall Archives. The Xml is a markup language based on standard elements and attributes, able to describe a finding aid in a machine readable structure. To open, edit and modify an EAD Xml you can use a simple text editor (.txt) as the Notepad on Windows or specific encoding program as AtoM or Oxygen.
 
  
-`<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ead xmlns="urn:isbn:1-931666-22-9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">;
 
@@ -117,7 +117,7 @@ To create the EAD Xml use the pre-form example here, originally written by Kate 
         </dsc>
 
     </archdesc>
-</ead>`
+</ead>
 
 
 
@@ -146,7 +146,7 @@ This spreadsheet does not generate the hierarchical relationships in the EAD. It
 To add more information about the collection you can encode it in the EAD or use the ArchivesSpace interface. If you want to do it on the EAD you can key in your texts in the following form, and then copy and paste them in the EAD in the `<archdesc>` node after the <did> and just before the `<dsc>`. You can add more elements or cut off the one you don’t need. To format and lay out the texts, use ArchivesSpace avoiding the risks of import errors. 
 
 
-  `<did> . . . </did>
+  <did> . . . </did>
    
        <abstract> Abstract </abstract>
        <bioghist> History or Biography </bioghist>
@@ -158,14 +158,14 @@ To add more information about the collection you can encode it in the EAD or use
 
     <dsc>
   [Paste here your records from the spreadsheet]
-    </dsc>`
+    </dsc>
 
 
 
 
 ## Start the import and solve the errors
 
-Once the EAD is ready, go on ArchivesSpace in the Background Jobs section, and upload the file. To start the import process click on the button “Queue work” and your import will start as soon the program have finish to run the previous job. The black “Log” window executes the import procedures and it will show the final message with the results of the import.
+Once the EAD is ready, go on ArchivesSpace in the Background Jobs section, and upload the file. To start the import process click on the button `Queue work` and your import will start as soon the program have finish to run the previous job. The black “Log” window executes the import procedures and it will show the final message with the results of the import.
 
 ![Img 9](https://github.com/marcolock/archivesspace-importguide/blob/master/images/9%20Import%20page.png)
 
