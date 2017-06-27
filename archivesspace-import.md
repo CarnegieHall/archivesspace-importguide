@@ -5,16 +5,10 @@
 ## Start ArchivesSpace
 
 To start the Demo version of AS we need to execute manually the program directory. To run it just execute on the computer terminal one of those scripts. ArchivesSpace will start in foreground model, so you must keep open the terminal window (if you close it the program shuts down). Java 1.6 (or newer) is required.
-
-* On Linux and OSX:
-
-     `cd /path/to/archivesspace
-     ./archivesspace.sh`
-     
-* On Windows:
-
-     `cd \path\to\archivesspace
-     archivesspace.bat`
+ 
+|On Windows|On Linux and OSX|
+|----|----|
+| `cd /path/to/archivesspace`<br/>`./archivesspace.sh`|`cd \path\to\archivesspace`<br/>`archivesspace.bat`|
 
 You can drag and drop the AS folder from the Applications to the Terminal, instead of write the path to the program. The path will automatically appear.
 
@@ -84,11 +78,11 @@ Now you can copy the EAD encoding cells for each record you want to import and p
 
 To create the EAD Xml use the pre-form example here called [`EADtoAS.txt`](https://github.com/marcolock/archivesspace-importguide/blob/master/EAD%20to%20AS.txt), originally written by Kate Bowers and posted on the [Harvard University Blog](https://blogs.harvard.edu/archivaldescription/2017/01/26/spreadsheet_to_ead_to_as/), and then modified by Marco Lo Cascio for Carnegie Hall Archives. The Xml is a markup language based on standard elements and attributes, able to describe a finding aid in a machine readable structure. To open, edit and modify an EAD Xml you can use a simple text editor (.txt) as the Notepad on Windows or specific encoding program as AtoM or Oxygen.
 
+
  
 <?xml version="1.0" encoding="UTF-8"?>
 <ead xmlns="urn:isbn:1-931666-22-9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">;
-
     <eadheader>
         <eadid> CHA-CollectionID_EAD </eadid>
         <filedesc>
@@ -137,17 +131,21 @@ Here’s a list of the principal elements and how to fill it out:
 The records copied in the EAD encoding column of the Template, must be paste in the second part of the of the provided EAD form, where you read: `“Paste here your records from the spreadsheet”` , inside the `<dsc></dsc>` element. 
 
 
+
 ![Copy and Paste Image](https://github.com/marcolock/archivesspace-importguide/blob/master/images/7%20Copy%20and%20Paste%20elements.png)
+
 
 This spreadsheet does not generate the hierarchical relationships in the EAD. It is expected that users will insert components as needed into the EAD. To structure your data and put  item level records  inside a  series level record  you have to paste them inside the `<c>` series element: the right position is the <did> element just before the closing node couple </did></c>.
 
+
 ![Insert elements Image](https://github.com/marcolock/archivesspace-importguide/blob/master/images/8%20Insert%20elements%20in%20series.png)
+
 
 To add more information about the collection you can encode it in the EAD or use the ArchivesSpace interface. If you want to do it on the EAD you can key in your texts in the following form, and then copy and paste them in the EAD in the `<archdesc>` node after the <did> and just before the `<dsc>`. You can add more elements or cut off the one you don’t need. To format and lay out the texts, use ArchivesSpace avoiding the risks of import errors. 
 
 
-  <did> . . . </did>
-   
+
+  <did> </did>
        <abstract> Abstract </abstract>
        <bioghist> History or Biography </bioghist>
        <scopecontent> Scope and Content </scopecontent>
@@ -167,11 +165,15 @@ To add more information about the collection you can encode it in the EAD or use
 
 Once the EAD is ready, go on ArchivesSpace in the Background Jobs section, and upload the file. To start the import process click on the button `Queue work` and your import will start as soon the program have finish to run the previous job. The black “Log” window executes the import procedures and it will show the final message with the results of the import.
 
+
 ![Img 9](https://github.com/marcolock/archivesspace-importguide/blob/master/images/9%20Import%20page.png)
+
 
 If the import goes fine refresh the page and search for the new collection browsing the Resources (in the staff interface) or the Collections (in the public interface). If some errors occurred, the Log explain why the process interrupted and where to find the error. Mistake in the writing of the EAD could be in both of the preparatory moments (the copy/paste of the records from the collection spreadsheet to the Import Spreadsheet, and the writing of the EAD). 
 
+
 ![Img 10](https://github.com/marcolock/archivesspace-importguide/blob/master/images/10%20Import%20error.png)
+
 
 Check the spreadsheet and be sure every mandatory field is filled and there aren’t not acceptable characters. Then you may have to check the syntax of the EAD. Here some useful tips: 
 * Check the EAD with the online [XML-Validate](http://xmlvalidation.com/)
