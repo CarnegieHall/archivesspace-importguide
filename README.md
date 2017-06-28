@@ -1,19 +1,19 @@
 # ch-archivesspace-importguide
 
 ## OVERVIEW
-Carnegie Hall Archives is using ArchivesSpace for internal needs to store and browse the Finding Aids of its paper collections. To import them in ArchivesSpace as Resources we have established this procedure. The [guide](https://github.com/marcolock/archivesspace-importguide/blob/master/archivesspace-import.md) illustrate how to convert the records in the Excel Spreadsheets in EAD Xml and how to import the well formed EAD in ArchivesSpace, proposing a schematic workflow for the ingest of data.
+Carnegie Hall Archives is using ArchivesSpace for internal needs to store and browse the *finding aids* of its paper collections. To import them in ArchivesSpace as Resources we have established this procedure. The [guide](https://github.com/marcolock/archivesspace-importguide/blob/master/archivesspace-import.md) illustrates how to convert the records from the *Excel Spreadsheets* to *EAD Xml* and how to import the well formed EAD in ArchivesSpace, proposing a schematic workflow for the ingest of data.
 
 ## CONTENTS
 
 | Resource Name         | Purpose           |
 | ------------- |-------------|
-|**[Carnegie Hall ArchivesSpace Guide](enter links to file names here)**      | description of file |
-|**[Template spreadsheet](enter links to file names here)**      | Template to convert the records in the Excel Spreadsheet in <c> elements for the EAD|
+|**[Template spreadsheet](https://github.com/marcolock/archivesspace-importguide/blob/master/EAD%20to%20AS.xlsx)**      | Template to convert the records in the Excel Spreadsheet in <c> elements for the EAD|
 |**[EAD Form](https://github.com/marcolock/archivesspace-importguide/blob/master/EAD%20to%20AS.txt)**      | EAD xml form, for the import in AS |
 
 ## ARCHIVESSPACE ASSESSMENT
 
 *[Enter text about how we are exploring ArchivesSpace as a solution to manage our physical collections]*
+ArchivesSpace is a database for the management of archival collection finding aids, in accordance with the most known international standards for description and catalouging. The elements tree schema, the internal browser and the interoperability with other database systems make ArchivesSpace a perfect program to store documents and series. *Import* and *Export* of EADs Xml permits an easy 
 
 ## CREDITS
 The Template was created by Kate Bowers for the [Harvard blog](https://blogs.harvard.edu/archivaldescription/2017/01/26/spreadsheet_to_ead_to_as/) and published in January 2017.  It was uploaded and edited by Marco Lo Cascio for Carnegie Hall Archives in June 2017. 
