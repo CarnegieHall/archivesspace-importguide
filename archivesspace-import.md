@@ -5,10 +5,12 @@
 ## Start ArchivesSpace
 
 To start the Demo version of AS we need to execute manually the program directory. To run it just execute on the computer terminal one of those scripts. ArchivesSpace will start in foreground model, so you must keep open the terminal window (if you close it the program shuts down). Java 1.6 (or newer) is required.
+
  
 |On Windows|On Linux and OSX|
 |----|----|
 | `cd /path/to/archivesspace`<br/>`./archivesspace.sh`|`cd \path\to\archivesspace`<br/>`archivesspace.bat`|
+
 
 You can drag and drop the AS folder from the Applications to the Terminal, instead of write the path to the program. The path will automatically appear.
 
