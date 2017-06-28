@@ -7,8 +7,10 @@ Carnegie Hall Archives is using ArchivesSpace for internal needs to store and br
 
 | Resource Name         | Purpose           |
 | ------------- |-------------|
-|**[Template spreadsheet](https://github.com/marcolock/archivesspace-importguide/blob/master/EAD%20to%20AS.xlsx)**      | Template to convert the records in the Excel Spreadsheet in <c> elements for the EAD|
-|**[EAD Form](https://github.com/marcolock/archivesspace-importguide/blob/master/EAD%20to%20AS.txt)**      | EAD xml form, for the import in AS |
+|EAD to AS.xlsx<br/>**[Template spreadsheet](https://github.com/marcolock/archivesspace-importguide/blob/master/EAD%20to%20AS.xlsx)**      | Template to convert the records in the Excel Spreadsheet in <c> elements for the EAD|
+|EAD to AS.txt<br/>**[EAD Form](https://github.com/marcolock/archivesspace-importguide/blob/master/EAD%20to%20AS.txt)**      | EAD xml form, for the import in AS |
+|archivesspace-import.md<br/>**[Import Guide](https://github.com/marcolock/archivesspace-importguide/blob/master/archivesspace-import.md)**|Guide to import resources and collections in ArchivesSpace|
+
 
 ## ARCHIVESSPACE ASSESSMENT
 
