@@ -3,18 +3,17 @@
 ## OVERVIEW
 Carnegie Hall (CH) Archives is assessing ArchivesSpace as a potential internal tool for storing, managing, and browsing its paper collections' metadata and finding aids. We established a procedure and documentation to import test records into ArchivesSpace as Resources. 
 
-The CH Archives proposes a schematic workflow for the ingest of data to ArchivesSpace. The [ArchivesSpace import guide](https://github.com/marcolock/archivesspace-importguide/blob/master/archivesspace-import.md) illustrates how to:
+The CH Archives proposes a schematic workflow for the ingest of data to ArchivesSpace (AS). The [ArchivesSpace import guide](archivesspace-import.md) illustrates how to:
 1. convert records from **Excel Spreadsheets** to **EAD XML** and
 2. how to import **well-formed EAD** to ArchivesSpace.
 
 ## CONTENTS
 
-| Resource Name         | Purpose           |
+| Resource Name         |  Purpose           |
 | ------------- |-------------|
-|EAD to AS.xlsx<br/>**[Template spreadsheet](https://github.com/marcolock/archivesspace-importguide/blob/master/EAD%20to%20AS.xlsx)**      | Template to convert the records in the Excel Spreadsheet in <c> elements for the EAD|
-|EAD to AS.txt<br/>**[EAD Form](https://github.com/marcolock/archivesspace-importguide/blob/master/EAD%20to%20AS.txt)**      | EAD xml form, for the import in AS |
-|archivesspace-import.md<br/>**[Import Guide](https://github.com/marcolock/archivesspace-importguide/blob/master/archivesspace-import.md)**|Guide to import resources and collections in ArchivesSpace|
-
+|**[Import Guide](archivesspace-import.md)**|Guide to import resources and collections in ArchivesSpace|
+|**[Template spreadsheet](EAD%20to%20AS.xlsx)**| Template to convert records formatted as Excel Spreadsheets into EAD elements|
+|**[EAD Form](EAD%20to%20AS.txt)**| EAD XML form, for the import to AS |
 
 ## ARCHIVESSPACE ASSESSMENT
 
