@@ -30,15 +30,15 @@ A detailed description is on the GitHub page of [ArchivesSpace](https://github.c
 
 ## How to import on ArchivesSpace
 
-To import Data in ArchivesSpace run the program on the Terminal and open the staff interface with the URL. After logging in go to `Create` and choose `Background Jobs`.
+To import Data in ArchivesSpace run the program on the Terminal and open the staff interface with the URL `http://localhost:8080/`. After logging in go to `Create` and choose `Background Jobs`.
 
 ![Create button image](https://github.com/marcolock/archivesspace-importguide/blob/master/images/2%20Create%20button.png)
 
-Select `Data Import` and then the kind of file you want to import: you can choose between EAD2002 (the only one format that allows to import `Resources`, the AS level for a Collection), EAC, CSV and Xml with the UniMarc Standards. To import finding aids and archival paper collections choose the EAD. 
+Select `Data Import` and then the kind of file you want to import: you can choose between EAD2002 (the only format that allows a user to import `Resources`, the AS level for a Collection), EAC, CSV and Xml with the UniMarc Standards. To import finding aids and archival paper collections choose **EAD**. 
 
 ![Background Jobs Image](https://github.com/marcolock/archivesspace-importguide/blob/master/images/4%20Import%20Type.png)
 
-The Import/Export Mapping for the EAD2002 is the guide tool to understand how EAD elements are formatted to be imported in AS and which are the corresponding objects and properties on AS data fields. 
+The Import/Export Mapping for EAD2002 demonstrates how EAD elements need to be formatted to be imported in AS. It also describes which are the corresponding objects and properties on AS data fields. 
 
 
 
