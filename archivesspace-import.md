@@ -54,31 +54,31 @@ A helpful online tool is [XML-Validator]( http://xmlvalidation.com/), which chec
 
 
 
-### From the Collection to the Template Spreadsheet
+### Encode Collection information to EAD using the Template Spreadsheet
 
-To convert an Excel Spreadsheet in an Xml EAD (Encoding Archival Description) finding aid we can use the Excel Template written and posted by the Harvard University Blog, and upload by the Carnegie Hall Archives to fit with our needs. 
+To convert an Excel Spreadsheet to an EAD (Encoding Archival Description)XML finding aid we will use the Excel Template written and posted by the Harvard University Blog, and modified by the CH Archives to fit our needs. 
 
-The template is an Excel Spreadsheet with denominated and fixed header for each columns. Populate the columns with the data from your spreadsheet, being attentive to choose the right column/element to ingest them. Copy and paste the normalized columns of your spreadsheet and autofill the new spreadsheet, but do not use formatting character (as tabs, returns and bullets) or symbols and accented letters (as &, <, and > because they can interfere with the encoding). The first row below the headers indicates the EAD note, to have an overview how the records are converted.
+The template is an Excel Spreadsheet with denominated and fixed header for each columns. Populate the columns with the data from your spreadsheet, being careful to choose the right column/element to import or paste corresponding data. Copy and paste the normalized columns of your spreadsheet and autofill the new spreadsheet, but do not use formatting characters (like tabs, returns, and bullets) or symbols and accented letters (as &, <, and > because they can interfere with the encoding). The first row below the headers indicates the EAD note, which provides a helpful overview of how the records are converted.
 
 ![Template headers Image](/images/5%20Template%20Headers.PNG)
 
-The values inserted will be shown in the public interface of AS, exception for the Creator and the Agents that need to be published manually from the staff interface.
+The **values inserted will be shown in the public interface of AS**, except for the Creator and the Agents that need to be published manually from the staff interface.
 
-Mandatory fields to fill and to not leave blank are:
-* `Level`: Key one of the following values, to indicate the position of each record in the collection hierarchy “class, collection, file, fonds, item, otherlevel, recordgrp, series, sub-fonds, sub-grp, sub-series".
-* `Date`: Key one, two or all the type of date cells,
-  * `Date expression` for a free text, 
-  * `Second Date` (event) if you need to specify performance dates,
-  * `Date begin/Date end`, to express the inclusive years (“yyyy” format): they always have to be different but in couple, and they need `Date expression`. 
-* `Title`: Type in the header of the record. It will be the title of your AS component.
-* `Unique ID`: Key the Identification code of the document.
-* `File type (label)`: if you want to insert the container information, be sure that the label for the `File #` be filled. The template have already pre-filled the columns with “Folders” but check for all the length of the spreadsheet.
+Mandatory fields to populate and not leave blank are:
+* `Level`: Indicates the position of each record in the collection hierarchy of “class, collection, file, fonds, item, otherlevel, recordgrp, series, sub-fonds, sub-grp, sub-series".
+* `Date`: Can populate two or all of the types of date cells,
+  * `Date expression` - for free text, 
+  * `Second Date` - e.g, for events if you need to specify performance dates,
+  * `Date begin/Date end` - to express an inclusive range in years (“yyyy” format). If you want to represent a range, you must include both a begin and end value, and `Date expression`. 
+* `Title`: To be included in the header of the record. It will be the title of your AS component.
+* `Unique ID`: Provides the identification code of the document.
+* `File type (label)`: If you want to insert container information, be sure that the label for `File #` be filled. The template has already pre-filled the columns with “Folders” but check the length of the spreadsheet.
 
-The entire EAD record is provided, for each row, by a single formula in the column EAD encoding. The `CONCATENATE` function is written to merge the fields we have populated and to translate them in the markup language Xml. To change or upload the function and to insert more fields, you need to re-write the function’s fragile syntax. Be careful, once you open the cell do not click on other cells because it could change the function, but use `Enter` to get out.
+The entire EAD record is provided, for each row, by a single formula in the column **EAD encoding**. A custom `CONCATENATE` function is written to merge the fields we have populated and to translate them to XML. To change or update the function and to insert more fields, you need to re-write the function’s fragile syntax. Be careful! Once you open the cell do not click on other cells because it could change the function, but use `Enter` to submit changes and exit the cell editing.
 
 ![Concatenate Image](/images/6%20Concatenate%20function.png)
 
-Now you can copy the EAD encoding cells for each record you want to import and paste them into another application. Do the copy/paste of the `EAD encoding` only with Microsoft Office 13 – Excel [Import with other programs could causes import errors].
+Now you can copy the EAD-endcoded cells for each record you want to import and paste them into another application or tab (VALUES ONLY!). Copy/paste `EAD encoding` only with Microsoft Office 13 – Excel [Import with other programs could cause encoding or character recognition errors].
 
 
 ### Create and edit the EAD
