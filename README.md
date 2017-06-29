@@ -1,24 +1,28 @@
 # ch-archivesspace-importguide
 
 ## OVERVIEW
-Carnegie Hall Archives is using ArchivesSpace for internal needs to store and browse the *finding aids* of its paper collections. To import them in ArchivesSpace as Resources we have established this procedure. The [guide](https://github.com/marcolock/archivesspace-importguide/blob/master/archivesspace-import.md) illustrates how to convert the records from the *Excel Spreadsheets* to *EAD Xml* and how to import the well formed EAD in ArchivesSpace, proposing a schematic workflow for the ingest of data.
+Carnegie Hall (CH) Archives is assessing ArchivesSpace as a potential internal tool for storing, managing, and browsing its physical collections' metadata and finding aids. We established a procedure and documentation to import test records into ArchivesSpace as Resources. 
+
+The CH Archives proposes a schematic workflow for the ingest of data to ArchivesSpace (AS). The [ArchivesSpace import guide](archivesspace-import.md) illustrates how to:
+1. convert records from **Excel Spreadsheets** to **EAD XML** and
+2. how to import **well-formed EAD** to ArchivesSpace.
 
 ## CONTENTS
 
-| Resource Name         | Purpose           |
+| Resource Name         |  Purpose           |
 | ------------- |-------------|
-|EAD to AS.xlsx<br/>**[Template spreadsheet](https://github.com/marcolock/archivesspace-importguide/blob/master/EAD%20to%20AS.xlsx)**      | Template to convert the records in the Excel Spreadsheet in <c> elements for the EAD|
-|EAD to AS.txt<br/>**[EAD Form](https://github.com/marcolock/archivesspace-importguide/blob/master/EAD%20to%20AS.txt)**      | EAD xml form, for the import in AS |
-|archivesspace-import.md<br/>**[Import Guide](https://github.com/marcolock/archivesspace-importguide/blob/master/archivesspace-import.md)**|Guide to import resources and collections in ArchivesSpace|
-
+|**[Import Guide](archivesspace-import.md)**| Step-by-step instructions on how to import Resources and Collections in ArchivesSpace|
+|**[Template Spreadsheet](EAD%20to%20AS.xlsx)**| Template to convert records formatted as Excel Spreadsheets into EAD elements|
+|**[EAD Form](EAD%20to%20AS.txt)**| A form which allows you to enter converted data and format it as EAD XML for import into AS  |
 
 ## ARCHIVESSPACE ASSESSMENT
 
-*[Enter text about how we are exploring ArchivesSpace as a solution to manage our physical collections]*
-ArchivesSpace is a database for the management of archival collection finding aids, in accordance with the most known international standards for description and catalouging. The elements tree schema, the internal browser and the interoperability with other database systems make ArchivesSpace a perfect program to store documents and series. *Import* and *Export* of EADs Xml permits an easy 
+In early 2017, CH Archives began exploring different free and open source software to manage its physical paper and object collections. ArchivesSpace is a database for the management of archival collection finding aids and metadata, in accordance with international standards for description and catalouging. The elements tree schema, the internal browser, and the interoperability with other database systems make ArchivesSpace an appealing free and open source option to store documents and series. *Import* and *Export* of EAD XML would enable the CH Archives to better integrate systems and comprehensively manage the scope of our physical collection data. The contents of this repository, including the [Import Guide](archivesspace-import.md), are the working documents from this software assessment effort.
 
-## CREDITS
-The Template was created by Kate Bowers for the [Harvard blog](https://blogs.harvard.edu/archivaldescription/2017/01/26/spreadsheet_to_ead_to_as/) and published in January 2017.  It was uploaded and edited by Marco Lo Cascio for Carnegie Hall Archives in June 2017. 
+## ACKNOWLEDGEMENTS
+The CH Archives thanks all AS users and contributors who make their work available for discovery and reuse. Reference material used in the assessment efforts and CH Archives version of the import guide are available in the [Resources section](/archivesspace-import.md#resources).
+
+The original template to convert spreadsheets to EAD for AS was created by Kate Bowers for the [Harvard blog](https://blogs.harvard.edu/archivaldescription/2017/01/26/spreadsheet_to_ead_to_as/) and published in January 2017. Formulas and other aspects of this template were modified by [Marco Lo Cascio](https://github.com/marcolock) for Carnegie Hall Archives in June 2017, and appear in this repo's [Template spreadsheet](EAD%20to%20AS.xlsx). 
 
 ## USAGE AND LICENSE
 ### USAGE GUIDELINES
