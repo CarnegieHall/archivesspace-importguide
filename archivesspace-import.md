@@ -83,7 +83,7 @@ Now you can copy the EAD-endcoded cells for each record you want to import and p
 
 ### Create and edit the EAD
 
-To create the EAD Xml use the pre-form example here called [`EADtoAS.txt`](https://github.com/marcolock/archivesspace-importguide/blob/master/EAD%20to%20AS.txt), originally written by Kate Bowers and posted on the [Harvard University Blog](https://blogs.harvard.edu/archivaldescription/2017/01/26/spreadsheet_to_ead_to_as/), and then modified by Marco Lo Cascio for Carnegie Hall Archives. The Xml is a markup language based on standard elements and attributes, able to describe a finding aid in a machine readable structure. To open, edit and modify an EAD Xml you can use a simple text editor (.txt) as the Notepad on Windows or specific encoding program as AtoM or Oxygen.
+To create the EAD XML use the prepared example called [`EADtoAS.txt`](/EAD%20to%20AS.txt), originally written by Kate Bowers and posted on the [Harvard University Blog](https://blogs.harvard.edu/archivaldescription/2017/01/26/spreadsheet_to_ead_to_as/), and then modified by Marco Lo Cascio for Carnegie Hall Archives. XML is a markup language based on standard elements and attributes, and creates a finding aid in a machine readable structure. To open, edit, and modify an EAD XML you can use a simple text editor like the Notepad on Windows or specific encoding program like AtoM or Oxygen.
 
 
 
@@ -120,33 +120,34 @@ To create the EAD Xml use the pre-form example here called [`EADtoAS.txt`](https
 
 
 
-Here’s a list of the principal elements and how to fill it out:
+Here’s a list of the principal elements and how to populate them:
 
-* `<eadheader>` = EAD Identifier: A required sub-element that designates a unique code for the EAD finding aid document. Type in the node “Collection ID, underscore EAD (CollectionID_EAD)” to standardize the titles.
-* `<eadid>` = EAD Identifier: A required sub-element of <eadheader> that designates a unique code for a particular EAD finding aid document.
-* `<titleproper>` = Title Proper of the Finding Aid: The name of the finding aid or finding aid series. Key the whole title of the collection, and the name of the creator of the finding aids. More information about the process can be add on AS.* `<archdesc>` = Archival Description: A wrapper element for the bulk of an EAD document instance, which describes the content, context, and extent of a body of archival materials.
-* `<untid>` = ID of the unit: Any alpha-numeric text string that serves as a unique reference point or control number for the described material. 
-* `<langmaterial>` =  Language of the material: Type in the languages of the materials. This is a free text, so you can put more than one language.
-* `<origination><creator>` = Information about the individual or organization responsible for the creation, accumulation, or assembly of the described materials. As the other Agents Links it won’t be shown in the public interface.
-* `<unittitle>` = Title of the unit: This will be the title of the collection.
-* `<unitdate>` = Date of the unit: Type in the inclusive dates inside the quotes and the year (or the same inclusive dates) in the brackets.
-* `<physdesc>` = Physical description: A wrapper element for bundling information about the appearance or construction of the described materials. Key a number and the kind of containers
+* `<eadheader>` = **EAD Identifier**: A required sub-element that designates a unique code for the EAD finding aid document. Type in the node “Collection ID, underscore EAD (CollectionID_EAD)” to standardize the titles.
+* `<eadid>` = **EAD Identifier**: A required sub-element of <eadheader> that designates a unique code for a particular EAD finding aid document.
+* `<titleproper>` = **Title of the Finding Aid**: The name of the finding aid or finding aid series. Key the whole title of the collection, and the name of the creator of the finding aids. More information about the process can be add on AS.
+* `<archdesc>` = **Archival Description**: A wrapper element for the bulk of an EAD document instance, which describes the content, context, and extent of a body of archival materials.
+* `<untid>` = **ID of the unit**: Any alpha-numeric text string that serves as a unique reference point or control number for the described material. 
+* `<langmaterial>` = **Language of the material**: Type in the languages of the materials. This is a free text, so you can put more than one language.
+* `<origination><creator>` = **Information about the individual or organization responsible for the creation**, accumulation, or assembly of the described materials. Like the other Agents Links, it won’t be shown in the public interface.
+* `<unittitle>` = **Title of the unit**: This will be the title of the collection.
+* `<unitdate>` = **Date of the unit**: Type in the inclusive dates inside the quotes and the year (or the same inclusive dates) in the brackets.
+* `<physdesc>` = **Physical description**: A wrapper element for bundling information about the appearance or construction of the described materials. Enter a number and the kind of containers for your collection.
 
 
-The records copied in the EAD encoding column of the Template, must be paste in the second part of the of the provided EAD form, where you read: `“Paste here your records from the spreadsheet”` , inside the `<dsc></dsc>` element. 
+The records copied in the EAD encoding column of the Template, must be pasted in the second part of the of the provided EAD form in: `“Paste here your records from the spreadsheet”` , inside the `<dsc></dsc>` element. 
 
 
 
 ![Copy and Paste Image](/images/7%20Copy%20and%20Paste%20elements.png)
 
 
-This spreadsheet does not generate the hierarchical relationships in the EAD. It is expected that users will insert components as needed into the EAD. To structure your data and put  item level records  inside a  series level record  you have to paste them inside the `<c>` series element: the right position is the <did> element just before the closing node couple </did></c>.
+This spreadsheet does not generate the hierarchical relationships in the EAD. It is expected that users will insert components as needed into the EAD. To structure your data and put item level records inside a series level record, you have to paste them inside the `<c>` series element: the right position is between the <did> element just before the closing node pair </did></c>.
 
 
 ![Insert elements Image](/images/8%20Insert%20elements%20in%20series.png)
 
 
-To add more information about the collection you can encode it in the EAD or use the ArchivesSpace interface. If you want to do it on the EAD you can key in your texts in the following form, and then copy and paste them in the EAD in the `<archdesc>` node after the <did> and just before the `<dsc>`. You can add more elements or cut off the one you don’t need. To format and lay out the texts, use ArchivesSpace avoiding the risks of import errors. 
+To add more information about the collection, you can encode it in EAD or use the ArchivesSpace interface. If you want to do it on the EAD you can key in your data in the following form, and then copy and paste them as EAD into the `<archdesc>` node after the <did> and just before the `<dsc>`. You can add more elements or remove the ones you don’t need. To format and lay out the text, use ArchivesSpace to avoid risk of import errors caused by special formatting. 
 
 
 
