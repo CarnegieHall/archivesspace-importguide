@@ -32,11 +32,11 @@ A detailed description is on the GitHub page of [ArchivesSpace](https://github.c
 
 To import Data in ArchivesSpace run the program on the Terminal and open the staff interface with the URL `http://localhost:8080/`. After logging in go to `Create` and choose `Background Jobs`.
 
-![Create button image](https://github.com/marcolock/archivesspace-importguide/blob/master/images/2%20Create%20button.png)
+![Create button image](/images/2%20Create%20button.png)
 
 Select `Data Import` and then the kind of file you want to import: you can choose between EAD2002 (the only format that allows a user to import `Resources`, the AS level for a Collection), EAC, CSV and Xml with the UniMarc Standards. To import finding aids and archival paper collections choose **EAD**. 
 
-![Background Jobs Image](https://github.com/marcolock/archivesspace-importguide/blob/master/images/4%20Import%20Type.png)
+![Background Jobs Image](/images/4%20Import%20Type.png)
 
 The Import/Export Mapping for EAD2002 demonstrates how EAD elements need to be formatted to be imported in AS. It also describes which are the corresponding objects and properties on AS data fields. 
 
@@ -47,8 +47,8 @@ The Import/Export Mapping for EAD2002 demonstrates how EAD elements need to be f
 The finding aid for an archival collection in EAD is a text document written in XML markup language, and described in a standard and machine-readable form with all the elements recommended by international standards like Dublin Core. To write a valid EAD for the import we need to convert our collection spreadsheets to EAD.
 
 There are two steps to convert the Excel spreadsheet in a valid EAD: 
-1. Use the Spreadsheet Template  `EADtoAS.xlsx`. This template refers to the records of series and subseries
-2. Use the EAD encoded text  `EADtoAS.txt`. This gives a structure to the data and inserts the collection’s information to your finding aid.
+1. Use the **Spreadsheet Template**: [EAD to AS.xlsx](/EAD%20to%20AS.xlsx). This template refers to the records of series and subseries
+2. Use the **EAD encoded text form**: [EAD to AS.txt](/EAD%20to%20AS.txt). This form gives a structure to the data and inserts the collection’s information to your finding aid.
 
 A helpful online tool is [XML-Validator]( http://xmlvalidation.com/), which checks the validity of your EAD. It underlines the syntax errors in the text. Check your EADs before the import to avoid import errors.      
 
@@ -60,7 +60,7 @@ To convert an Excel Spreadsheet in an Xml EAD (Encoding Archival Description) fi
 
 The template is an Excel Spreadsheet with denominated and fixed header for each columns. Populate the columns with the data from your spreadsheet, being attentive to choose the right column/element to ingest them. Copy and paste the normalized columns of your spreadsheet and autofill the new spreadsheet, but do not use formatting character (as tabs, returns and bullets) or symbols and accented letters (as &, <, and > because they can interfere with the encoding). The first row below the headers indicates the EAD note, to have an overview how the records are converted.
 
-![Template headers Image](https://github.com/marcolock/archivesspace-importguide/blob/master/images/5%20Template%20Headers.PNG)
+![Template headers Image](/images/5%20Template%20Headers.PNG)
 
 The values inserted will be shown in the public interface of AS, exception for the Creator and the Agents that need to be published manually from the staff interface.
 
@@ -76,7 +76,7 @@ Mandatory fields to fill and to not leave blank are:
 
 The entire EAD record is provided, for each row, by a single formula in the column EAD encoding. The `CONCATENATE` function is written to merge the fields we have populated and to translate them in the markup language Xml. To change or upload the function and to insert more fields, you need to re-write the function’s fragile syntax. Be careful, once you open the cell do not click on other cells because it could change the function, but use `Enter` to get out.
 
-![Concatenate Image](https://github.com/marcolock/archivesspace-importguide/blob/master/images/6%20Concatenate%20function.png)
+![Concatenate Image](/images/6%20Concatenate%20function.png)
 
 Now you can copy the EAD encoding cells for each record you want to import and paste them into another application. Do the copy/paste of the `EAD encoding` only with Microsoft Office 13 – Excel [Import with other programs could causes import errors].
 
@@ -137,13 +137,13 @@ The records copied in the EAD encoding column of the Template, must be paste in 
 
 
 
-![Copy and Paste Image](https://github.com/marcolock/archivesspace-importguide/blob/master/images/7%20Copy%20and%20Paste%20elements.png)
+![Copy and Paste Image](/images/7%20Copy%20and%20Paste%20elements.png)
 
 
 This spreadsheet does not generate the hierarchical relationships in the EAD. It is expected that users will insert components as needed into the EAD. To structure your data and put  item level records  inside a  series level record  you have to paste them inside the `<c>` series element: the right position is the <did> element just before the closing node couple </did></c>.
 
 
-![Insert elements Image](https://github.com/marcolock/archivesspace-importguide/blob/master/images/8%20Insert%20elements%20in%20series.png)
+![Insert elements Image](/images/8%20Insert%20elements%20in%20series.png)
 
 
 To add more information about the collection you can encode it in the EAD or use the ArchivesSpace interface. If you want to do it on the EAD you can key in your texts in the following form, and then copy and paste them in the EAD in the `<archdesc>` node after the <did> and just before the `<dsc>`. You can add more elements or cut off the one you don’t need. To format and lay out the texts, use ArchivesSpace avoiding the risks of import errors. 
@@ -171,13 +171,13 @@ To add more information about the collection you can encode it in the EAD or use
 Once the EAD is ready, go on ArchivesSpace in the Background Jobs section, and upload the file. To start the import process click on the button `Queue work` and your import will start as soon the program have finish to run the previous job. The black “Log” window executes the import procedures and it will show the final message with the results of the import.
 
 
-![Img 9](https://github.com/marcolock/archivesspace-importguide/blob/master/images/9%20Import%20page%20sml.png)
+![Img 9](/images/9%20Import%20page%20sml.png)
 
 
 If the import goes fine refresh the page and search for the new collection browsing the Resources (in the staff interface) or the Collections (in the public interface). If some errors occurred, the Log explain why the process interrupted and where to find the error. Mistake in the writing of the EAD could be in both of the preparatory moments (the copy/paste of the records from the collection spreadsheet to the Import Spreadsheet, and the writing of the EAD). 
 
 
-![Img 10](https://github.com/marcolock/archivesspace-importguide/blob/master/images/10%20Import%20error.png)
+![Img 10](/images/10%20Import%20error.png)
 
 
 Check the spreadsheet and be sure every mandatory field is filled and there aren’t not acceptable characters. Then you may have to check the syntax of the EAD. Here some useful tips: 
@@ -222,9 +222,3 @@ A lot of resources could be found in internet about the data import on ArchivesS
 * [A website about EAD, with vocabulary of elements and attribute, by the Library of Congress](http://loc.gov/ead/index.html)
 
 * [Online tool to check and validate the EAD](http://xmlvalidation.com/)
-
-
-
-
-
-
