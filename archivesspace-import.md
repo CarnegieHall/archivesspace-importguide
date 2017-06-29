@@ -5,10 +5,12 @@
 ## Start ArchivesSpace
 
 To start the Demo version of AS we need to execute manually the program directory. To run it just execute on the computer terminal one of those scripts. ArchivesSpace will start in foreground model, so you must keep open the terminal window (if you close it the program shuts down). Java 1.6 (or newer) is required.
+
  
 |On Windows|On Linux and OSX|
 |----|----|
 | `cd /path/to/archivesspace`<br/>`./archivesspace.sh`|`cd \path\to\archivesspace`<br/>`archivesspace.bat`|
+
 
 You can drag and drop the AS folder from the Applications to the Terminal, instead of write the path to the program. The path will automatically appear.
 
@@ -79,39 +81,37 @@ Now you can copy the EAD encoding cells for each record you want to import and p
 To create the EAD Xml use the pre-form example here called [`EADtoAS.txt`](https://github.com/marcolock/archivesspace-importguide/blob/master/EAD%20to%20AS.txt), originally written by Kate Bowers and posted on the [Harvard University Blog](https://blogs.harvard.edu/archivaldescription/2017/01/26/spreadsheet_to_ead_to_as/), and then modified by Marco Lo Cascio for Carnegie Hall Archives. The Xml is a markup language based on standard elements and attributes, able to describe a finding aid in a machine readable structure. To open, edit and modify an EAD Xml you can use a simple text editor (.txt) as the Notepad on Windows or specific encoding program as AtoM or Oxygen.
 
 
- 
-<?xml version="1.0" encoding="UTF-8"?>
-<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">;
-    <eadheader>
-        <eadid> CHA-CollectionID_EAD </eadid>
-        <filedesc>
-            <titlestmt>
-                <titleproper> CollectionName finding aids, by YourName</titleproper>
-            </titlestmt>
-        </filedesc>
-    </eadheader>
 
-    <archdesc level="collection">
-
-        <did>
-            <unitid> CHA-CollectionID </unitid>
-            <langmaterial><language> English, and other?</language></langmaterial>
-            <origination><persname> Creator of the collection </persname></origination>
-            <unittitle> Title of the Collection </unittitle>
-            <unitdate normal="1900/2000"> 1900-2000 </unitdate>
-            <physdesc><extent> Number / Container  </extent></physdesc>
-
-        </did>
-
-        <dsc>
-
-	[Paste here the records from the spreadsheet]
-
-        </dsc>
-
-    </archdesc>
-</ead>
+	<?xml version="1.0" encoding="UTF-8"?>
+	<ead xmlns="urn:isbn:1-931666-22-9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	    xsi:schemaLocation="urn:isbn:1-931666-22-9 http://www.loc.gov/ead/ead.xsd">;
+	    
+	    <eadheader>
+	        <eadid> CHA-CollectionID_EAD </eadid>
+	        <filedesc>
+	            <titlestmt>
+	                <titleproper> CollectionName finding aids, by YourName</titleproper>
+	            </titlestmt>
+	        </filedesc>
+	    </eadheader>
+	    
+	    <archdesc level="collection">
+	    
+ 	       <did>
+	            <unitid> CHA-CollectionID </unitid>
+  	          <langmaterial><language> English, and other?</language></langmaterial>
+  	          <origination><persname> Creator of the collection </persname></origination>
+  	          <unittitle> Title of the Collection </unittitle>
+  	          <unitdate normal="1900/2000"> 1900-2000 </unitdate>
+  	          <physdesc><extent> Number / Container  </extent></physdesc>
+ 	       </did>
+	       
+ 	    <dsc>
+		[Paste here the records from the spreadsheet]
+           </dsc>
+	   
+   	 </archdesc>
+	</ead>
 
 
 
@@ -145,18 +145,18 @@ To add more information about the collection you can encode it in the EAD or use
 
 
 
-  <did> </did>
-       <abstract> Abstract </abstract>
-       <bioghist> History or Biography </bioghist>
-       <scopecontent> Scope and Content </scopecontent>
-       <custodhist> Provenance </custidhist>
-       <arrangement> Arrangement </arrangement>
-       <odd><head> Note label </head><p> Note body </p></odd>
-       <acessrestrict> Restrictions </acessrestrict>
+	  <did> </did>
+	       <abstract> Abstract </abstract>
+	       <bioghist> History or Biography </bioghist>
+	       <scopecontent> Scope and Content </scopecontent>
+	       <custodhist> Provenance </custidhist>
+	       <arrangement> Arrangement </arrangement>
+	       <odd><head> Note label </head><p> Note body </p></odd>
+	       <acessrestrict> Restrictions </acessrestrict>
 
-    <dsc>
-  [Paste here your records from the spreadsheet]
-    </dsc>
+	    <dsc>
+	  [Paste here your records from the spreadsheet]
+	    </dsc>
 
 
 
@@ -166,7 +166,7 @@ To add more information about the collection you can encode it in the EAD or use
 Once the EAD is ready, go on ArchivesSpace in the Background Jobs section, and upload the file. To start the import process click on the button `Queue work` and your import will start as soon the program have finish to run the previous job. The black “Log” window executes the import procedures and it will show the final message with the results of the import.
 
 
-![Img 9](https://github.com/marcolock/archivesspace-importguide/blob/master/images/9%20Import%20page.png)
+![Img 9](https://github.com/marcolock/archivesspace-importguide/blob/master/images/9%20Import%20page%20sml.png)
 
 
 If the import goes fine refresh the page and search for the new collection browsing the Resources (in the staff interface) or the Collections (in the public interface). If some errors occurred, the Log explain why the process interrupted and where to find the error. Mistake in the writing of the EAD could be in both of the preparatory moments (the copy/paste of the records from the collection spreadsheet to the Import Spreadsheet, and the writing of the EAD). 
