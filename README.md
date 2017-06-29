@@ -1,7 +1,11 @@
 # ch-archivesspace-importguide
 
 ## OVERVIEW
-Carnegie Hall (CH) Archives is assessing ArchivesSpace as a potential internal tool for storing, managing, and browsing its paper collections' metadata and finding aids. We established a procedure and documentation to import test records into ArchivesSpace as Resources. The CH Archives [ArchivesSpace import guide](https://github.com/marcolock/archivesspace-importguide/blob/master/archivesspace-import.md) illustrates how to convert  records from the *Excel Spreadsheets* to *EAD XML* and how to import well formed EAD to ArchivesSpace, proposing a schematic workflow for the ingest of data.
+Carnegie Hall (CH) Archives is assessing ArchivesSpace as a potential internal tool for storing, managing, and browsing its paper collections' metadata and finding aids. We established a procedure and documentation to import test records into ArchivesSpace as Resources. 
+
+The CH Archives proposes a schematic workflow for the ingest of data to ArchivesSpace. The [ArchivesSpace import guide](https://github.com/marcolock/archivesspace-importguide/blob/master/archivesspace-import.md) illustrates how to:
+1. convert records from **Excel Spreadsheets** to **EAD XML** and
+2. how to import **well-formed EAD** to ArchivesSpace.
 
 ## CONTENTS
 
