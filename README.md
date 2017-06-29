@@ -17,11 +17,12 @@ The CH Archives proposes a schematic workflow for the ingest of data to Archives
 
 ## ARCHIVESSPACE ASSESSMENT
 
-*[Enter text about how we are exploring ArchivesSpace as a solution to manage our physical collections]*
-ArchivesSpace is a database for the management of archival collection finding aids, in accordance with the most known international standards for description and catalouging. The elements tree schema, the internal browser and the interoperability with other database systems make ArchivesSpace a perfect program to store documents and series. *Import* and *Export* of EADs Xml permits an easy 
+In early 2017, CH Archives began exploring different free and open source software to manage its physical paper and object collections. ArchivesSpace is a database for the management of archival collection finding aids and metadata, in accordance with international standards for description and catalouging. The elements tree schema, the internal browser, and the interoperability with other database systems make ArchivesSpace an appealing free and open source option to store documents and series. *Import* and *Export* of EAD XML would enable the CH Archives to better integrate systems and comprehensively manage the scope of our physical collection data. The contents of this repository, including the [Import Guide](archivesspace-import.md), are the working documents from this software assessment effort.
 
-## CREDITS
-The Template was created by Kate Bowers for the [Harvard blog](https://blogs.harvard.edu/archivaldescription/2017/01/26/spreadsheet_to_ead_to_as/) and published in January 2017.  It was uploaded and edited by Marco Lo Cascio for Carnegie Hall Archives in June 2017. 
+## ACKNOWLEDGEMENTS
+The CH Archives thanks all AS users and contributors who make their work available for discovery and reuse. Reference material used in the assessment efforts and CH Archives version of the import guide are available in the [Resources section](/archivesspace-import.md#resources).
+
+The original template to convert spreadsheets to EAD for AS was created by Kate Bowers for the [Harvard blog](https://blogs.harvard.edu/archivaldescription/2017/01/26/spreadsheet_to_ead_to_as/) and published in January 2017. Formulas and other aspects of this template were modified by [Marco Lo Cascio](https://github.com/marcolock) for Carnegie Hall Archives in June 2017, and appear in this repo's [Template spreadsheet](EAD%20to%20AS.xlsx). 
 
 ## USAGE AND LICENSE
 ### USAGE GUIDELINES
