@@ -44,8 +44,13 @@ The Import/Export Mapping for EAD2002 demonstrates how EAD elements need to be f
 
 ## How to prepare the EAD for the import
 
-The EAD is a text document written with the Xml markup language, and describe in a standard and machine-readable form a finding aid for an archival collection, with all the elements recommended by international standards as the Dublin Core and the ISOs. To write a valid EAD for the import we need to convert our collection spreadsheets. There are two different steps to convert the Excel spreadsheet in a valid EAD: the first one using the Spreadsheet Template  `EADtoAS.xlsx`  refers to the records of series and subseries; the second one in the EAD encoded text  `EADtoAS.txt`  is to give a structure to the data and insert the collection’s information of your finding aid.
-A helpful online tool is [Xml-Validator]( http://xmlvalidation.com/), that check the validity of you EAD, underling the syntax errors in the text. Check your EADs before the import to avoid import errors.      
+The finding aid for an archival collection in EAD is a text document written in XML markup language, and described in a standard and machine-readable form with all the elements recommended by international standards like Dublin Core. To write a valid EAD for the import we need to convert our collection spreadsheets to EAD.
+
+There are two steps to convert the Excel spreadsheet in a valid EAD: 
+1. Use the Spreadsheet Template  `EADtoAS.xlsx`. This template refers to the records of series and subseries
+2. Use the EAD encoded text  `EADtoAS.txt`. This gives a structure to the data and inserts the collection’s information to your finding aid.
+
+A helpful online tool is [XML-Validator]( http://xmlvalidation.com/), which checks the validity of your EAD. It underlines the syntax errors in the text. Check your EADs before the import to avoid import errors.      
 
 
 
