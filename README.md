@@ -11,9 +11,9 @@ The CH Archives proposes a schematic workflow for the ingest of data to Archives
 
 | Resource Name         |  Purpose           |
 | ------------- |-------------|
-|**[Import Guide](archivesspace-import.md)**|Guide to import resources and collections in ArchivesSpace|
-|**[Template spreadsheet](EAD%20to%20AS.xlsx)**| Template to convert records formatted as Excel Spreadsheets into EAD elements|
-|**[EAD Form](EAD%20to%20AS.txt)**| EAD XML form, for the import to AS |
+|**[Import Guide](archivesspace-import.md)**| Step-by-step instructions on how to import Resources and Collections in ArchivesSpace|
+|**[Template Spreadsheet](EAD%20to%20AS.xlsx)**| Template to convert records formatted as Excel Spreadsheets into EAD elements|
+|**[EAD Form](EAD%20to%20AS.txt)**| A form which allows you to enter converted data and format it as EAD XML for import into AS  |
 
 ## ARCHIVESSPACE ASSESSMENT
 
