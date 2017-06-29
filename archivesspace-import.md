@@ -167,24 +167,24 @@ To add more information about the collection, you can encode it in EAD or use th
 
 
 
-## Start the import and solve the errors
+## Start import and resolve errors
 
-Once the EAD is ready, go on ArchivesSpace in the Background Jobs section, and upload the file. To start the import process click on the button `Queue work` and your import will start as soon the program have finish to run the previous job. The black “Log” window executes the import procedures and it will show the final message with the results of the import.
+Once the EAD is ready, go on ArchivesSpace in the Background Jobs section, and upload the file. To start the import process, click on the button `Queue work` and your import will start as soon the program has finished running the previous job. The black “Log” window executes the import procedures and it will show the final message with the results of the import.
 
 
 ![Img 9](/images/9%20Import%20page%20sml.png)
 
 
-If the import goes fine refresh the page and search for the new collection browsing the Resources (in the staff interface) or the Collections (in the public interface). If some errors occurred, the Log explain why the process interrupted and where to find the error. Mistake in the writing of the EAD could be in both of the preparatory moments (the copy/paste of the records from the collection spreadsheet to the Import Spreadsheet, and the writing of the EAD). 
+If the import is successful, refresh the page and search for the new collection by browsing the Resources (in the staff interface) or the Collections (in the public interface). If errors occurred, the Log explains why the process was interrupted and where to find the error. Mistakes in the EAD could be in both of the preparatory moments (the copy/paste of the records from the collection spreadsheet to the Import Spreadsheet, and the writing of the EAD). 
 
 
 ![Img 10](/images/10%20Import%20error.png)
 
 
-Check the spreadsheet and be sure every mandatory field is filled and there aren’t not acceptable characters. Then you may have to check the syntax of the EAD. Here some useful tips: 
-* Check the EAD with the online [XML-Validate](http://xmlvalidation.com/)
-* Search in your Xml editor how many `<c>` nodes are and compare with the number of `</c>` tags. They have to be at the same amount, or you have to add/delete one or more of them to have a clear syntax. Same procedure for the other relevant elements as the `<did></did>` and the `<unitdate></untdate>`.
-* Check the orthography of the EAD and delete characters as the ampersand “&”, the angle brackets “<” and “>” and the quotation marks “ inside the attributes. To insert these not permitted characters you can type:
+Check the spreadsheet and be sure every mandatory field is filled and only acceptable characters are used. Then you may have to check the syntax of the EAD. Here some useful tips: 
+* Check the EAD with the online [XML-Validate](http://xmlvalidation.com/) tool.
+* Search in your XML editor how many `<c>` nodes are and compare with the number of `</c>` tags. They have to be at the same amount, or you have to add/delete one or more of them to have clear syntax. Do the same procedure for the other relevant elements as the `<did></did>` and the `<unitdate></untdate>`.
+* Check the spelling, capitalization, and consistency of the EAD and delete characters like the ampersand “&”, the angle brackets “<” and “>” and the quotation marks “ inside the attributes. To insert these 'illegal' characters you can use:
 
    * `&lt`; to represent "<";
    * `&gt`; to represent ">";
@@ -192,25 +192,25 @@ Check the spreadsheet and be sure every mandatory field is filled and there aren
    * `&apos`; to represent "  **'**  ";
    * `&quot`; to represent '  **"**  '.
    
-* Check the “collection description” encoded in EAD to eliminate every formatting characters. 
-* Check in the spreadsheet the dates format; sometimes Excel automatically change dates to numbers (and vice-versa) invalidating the EAD. Be sure to copy and paste the columns with the right values. A helpful trick is to copy the records and paste them in a blank NotePad, then copy again and paste on the Template Spreadsheet, formatting the dates column for “text”. 
-* To import big collection the best way it’s to split it in series and subseries, and try the import of singles and coherent groups of records and then merge them in a one collective EAD.
+* Check the “collection description” encoded in EAD to eliminate formatting characters. 
+* Check the date formats in the spreadsheet; sometimes Excel automatically change dates to numbers (and vice-versa) invalidating the EAD. Be sure to copy and paste the columns with the correctly formatted values. A helpful trick is to copy the records and paste them in a blank NotePad, then copy again and paste on the Template Spreadsheet, formatting the dates column as “text”. 
+* To import a big collection, the best way we determined was to split it in series and subseries, and try the import of singles and coherent groups of records and _then_ merge them into one comprehensive EAD in AS.
 
 
 
-## Other systems of import
+## Other import formats and procedures
 
-There are seven different ways to import data in AS. The kind of data you want to import in (Resources, Accessions, Digital object) determinates the kind of format you have to prepare and use as importer. To import Archival Collections (called “Resources” in AS) you can use the EAD or the MARCXml. Here some basic acknowledgment about the import:
+There are seven different ways to import data in AS. The kind of data you want to import in (Resources, Accessions, Digital object) determines the kind of format you have to prepare and use. To import Archival Collections (called “Resources” in AS) you can use the EAD or the MARCXml. Some basic information about the import process:
 
-* The MARCXml permits also the import of “Resources”, “Accessions” and “Digital Objects”.  It’s an XML schema, released by the Library of Congress, based on the international UNIMARC standards and it is thought to manage bibliographic information in a simple way.
-* The CVS it’s a language to store data in a plain text format as simple comma-separated values. It could import “Accessions” and “Digital Objects” in ArchivesSpace. Populate with your data records this Excel Template, following the provided mapping. To create “Digital Objects” with insider subseries, just pay attention to type in the cells digital_object_is_a_component TRUE or FALSE and digital_object_component_id with the ID of the parent object. To transform the Spreadsheet in a CSV file just use the export function of Excel and select CSV as the desired language.
+* MARCXml permits also the import of “Resources”, “Accessions” and “Digital Objects”.  It’s an XML schema, released by the Library of Congress, based on the international UNIMARC standards and it manages bibliographic information in a simple way.
+* CSV stores data in a plain text format as simple comma-separated values. It could import “Accessions” and “Digital Objects” in ArchivesSpace. Populate the Excel Template with your data, following the provided mapping. To create “Digital Objects” with insider subseries, enter in the cells digital_object_is_a_component TRUE or FALSE and digital_object_component_id with the ID of the parent object. To transform the Spreadsheet to a CSV file, use the export function of Excel and select CSV as the desired format.
 
- The migration tools and the import mappings are accessible on the [website](http://archivesspace.org/application/data-import-and-export-maps/). 
+Additional migration tools and the import mappings are available on the [AS website](http://archivesspace.org/application/data-import-and-export-maps/). 
 
 
 ## Resources
 
-A lot of resources could be found in internet about the data import on ArchivesSpace. Here some good manuals, articles and online instruments that could be helpful. 
+Many resources are available online to support data import in ArchivesSpace. Below are selected manuals, articles and online instruments that were helpful in our assessment of AS and the creation of this guide. 
 
 * [ArchivesSpace Manual by the YALE University AS Team](https://docs.google.com/document/d/1DI_7YNZy-RcjQ9hpMMbxJEkHFpYndzmDoG3ylOc38BY/edit#heading=h.1n1mu2y)
 
