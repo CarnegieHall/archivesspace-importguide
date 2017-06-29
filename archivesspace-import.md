@@ -4,7 +4,7 @@
 
 ## Start ArchivesSpace
 
-To start the Demo version of AS we need to execute manually the program directory. To run it just execute on the computer terminal one of those scripts. ArchivesSpace will start in foreground model, so you must keep open the terminal window (if you close it the program shuts down). Java 1.6 (or newer) is required.
+To start the Demo version of ArchivesSpace (AS) we need to change to the program directory and execute the scripts which starts AS. AS will start in foreground model, so you must keep the Terminal window open for the entire session (if you close it, the program shuts down). Java 1.6 (or newer) is required.
 
  
 |On Windows|On Linux and OSX|
@@ -12,11 +12,11 @@ To start the Demo version of AS we need to execute manually the program director
 | `cd /path/to/archivesspace`<br/>`./archivesspace.sh`|`cd \path\to\archivesspace`<br/>`archivesspace.bat`|
 
 
-You can drag and drop the AS folder from the Applications to the Terminal, instead of write the path to the program. The path will automatically appear.
+You can drag and drop the AS folder from the Applications direcotry to the Terminal, instead of typing the path to the program. The path will automatically appear after you drag and drop.
 
 ![Drag and Drop Image](https://github.com/marcolock/archivesspace-importguide/blob/master/images/1%20Drag%20and%20Drop.png)
 
-It will take a while to run completely the program, and once it’s ready you can access the system by one of these URL links on your internet browser:
+It will take a moment to completely open program, and once it’s ready you can access the system by going to these URL in your Internet browser:
 
 * http://localhost:8089/ -- the backend
 * http://localhost:8080/ -- the staff interface
