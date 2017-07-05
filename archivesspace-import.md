@@ -56,7 +56,7 @@ A helpful online tool is [XML-Validator]( http://xmlvalidation.com/), which chec
 
 ### Encode Collection information to EAD using the Template Spreadsheet
 
-To convert an Excel Spreadsheet to an EAD (Encoding Archival Description)XML finding aid we will use the Excel Template written and posted by the Harvard University Blog, and modified by the CH Archives to fit our needs. 
+To convert an Excel Spreadsheet to an EAD (Encoding Archival Description) XML finding aid we will use the Excel Template written and posted by the Harvard University Blog, and modified by the CH Archives to fit our needs. 
 
 The template is an Excel Spreadsheet with denominated and fixed header for each columns. Populate the columns with the data from your spreadsheet, being careful to choose the right column/element to import or paste corresponding data. Copy and paste the normalized columns of your spreadsheet and autofill the new spreadsheet, but do not use formatting characters (like tabs, returns, and bullets) or symbols and accented letters (as &, <, and > because they can interfere with the encoding). The first row below the headers indicates the EAD note, which provides a helpful overview of how the records are converted.
 
@@ -78,7 +78,7 @@ The entire EAD record is provided, for each row, by a single formula in the colu
 
 ![Concatenate Image](/images/6%20Concatenate%20function.png)
 
-Now you can copy the EAD-endcoded cells for each record you want to import and paste them into another application or tab (VALUES ONLY!). Copy/paste `EAD encoding` only with Microsoft Office 13 – Excel [Import with other programs could cause encoding or character recognition errors].
+Now you can copy the EAD-endcoded cells for each record you want to import and paste them into another application or tab (VALUES ONLY!). Copy/paste `EAD encoding` only with Microsoft Office 13 – Excel. Import with other programs could cause encoding or character recognition errors.
 
 
 ### Create and edit the EAD
@@ -141,13 +141,13 @@ The records copied in the EAD encoding column of the Template, must be pasted in
 ![Copy and Paste Image](/images/7%20Copy%20and%20Paste%20elements.png)
 
 
-This spreadsheet does not generate the hierarchical relationships in the EAD. It is expected that users will insert components as needed into the EAD. To structure your data and put item level records inside a series level record, you have to paste them inside the `<c>` series element: the right position is between the <did> element just before the closing node pair </did></c>.
+This spreadsheet does not generate the hierarchical relationships in the EAD. It is expected that users will insert components as needed into the EAD. To structure your data and put item level records inside a series level record, you have to paste them inside the `<c>` series element: the right position is between the <did> element just before the closing node pair `</did></c>`.
 
 
 ![Insert elements Image](/images/8%20Insert%20elements%20in%20series.png)
 
 
-To add more information about the collection, you can encode it in EAD or use the ArchivesSpace interface. If you want to do it on the EAD you can key in your data in the following form, and then copy and paste them as EAD into the `<archdesc>` node after the <did> and just before the `<dsc>`. You can add more elements or remove the ones you don’t need. To format and lay out the text, use ArchivesSpace to avoid risk of import errors caused by special formatting. 
+To add more information about the collection, you can encode it in EAD or use the ArchivesSpace interface. If you want to do it on the EAD you can key in your data in the following form, and then copy and paste them as EAD into the `<archdesc>` node after the `<did>` and just before the `<dsc>`. You can add more elements or remove the ones you don’t need. To format and lay out the text, use ArchivesSpace to avoid risk of import errors caused by special formatting. 
 
 
 
