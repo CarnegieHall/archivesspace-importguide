@@ -9,7 +9,7 @@ To start the Demo version of ArchivesSpace (AS) we need to change to the program
  
 |On Windows|On Linux and OSX|
 |----|----|
-| `cd /path/to/archivesspace`<br/>`./archivesspace.sh`|`cd \path\to\archivesspace`<br/>`archivesspace.bat`|
+| `cd \path\to\archivesspace`<br/>`archivesspace.bat`|`cd /path/to/archivesspace`<br/>`./archivesspace.sh`|
 
 
 You can drag and drop the AS folder from the Applications direcotry to the Terminal, instead of typing the path to the program. The path will automatically appear after you drag and drop.
